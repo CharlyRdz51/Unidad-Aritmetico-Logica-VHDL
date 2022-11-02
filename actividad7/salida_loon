@@ -1,0 +1,88 @@
+
+                   @@@@@@                          @@@    @@@
+                     @@                             @@     @ 
+                     @@                             @@@    @ 
+                     @@           @@@       @@@     @ @@   @ 
+                     @@         @@   @@   @@   @@   @ @@   @ 
+                     @@        @@     @@ @@     @@  @  @@  @ 
+                     @@        @@     @@ @@     @@  @   @@ @ 
+                     @@        @@     @@ @@     @@  @   @@ @ 
+                     @@      @ @@     @@ @@     @@  @    @@@ 
+                     @@     @   @@   @@   @@   @@   @     @@ 
+                   @@@@@@@@@@     @@@       @@@    @@@    @@ 
+
+                           Local optimization on Nets
+
+                 Alliance CAD System 5.0, loon 5.0 [2003/12/07]
+                 Copyright (c) 2000-2018,        ASIM/LIP6/UPMC
+                 Author(s):                     François Donnet
+                 E-mail        :    alliance-users@asim.lip6.fr
+
+	MBK_IN_LO	: vst
+	MBK_OUT_LO	: vst
+	MBK_TARGET_LIB	: /usr/share/alliance/cells/sxlib
+
+Reading default parameter...
+50% area - 50% delay optimization
+Reading file 'alu3b7_boog.vst'...
+Reading lib '/usr/share/alliance/cells/sxlib'...
+Capacitances on file 'alu3b7_boog.vst'...
+Delays on file 'alu3b7_boog.vst'...3624 ps
+Area on file 'alu3b7_boog.vst'...165000 lamda² (with over-cell routing)
+Details...
+	inv_x2: 19 (8%)
+	a2_x2: 12 (9%)
+	no2_x1: 12 (7%)
+	na2_x1: 9 (5%)
+	o2_x2: 9 (6%)
+	xr2_x1: 6 (8%)
+	noa22_x1: 5 (4%)
+	a3_x2: 5 (4%)
+	ao22_x2: 5 (4%)
+	oa2a22_x2: 5 (6%)
+	nao22_x1: 4 (3%)
+	no3_x1: 4 (3%)
+	mx3_x2: 4 (7%)
+	oa2ao222_x2: 3 (4%)
+	na3_x1: 3 (2%)
+	nao2o22_x1: 3 (3%)
+	nxr2_x1: 3 (4%)
+	o3_x2: 2 (1%)
+	oa22_x2: 2 (1%)
+	o4_x2: 1 (1%)
+	an12_x1: 1 (0%)
+	Total: 117
+Worst RC on file 'alu3b7_boog.vst'...228 ps
+Inserting buffers on critical path for file 'alu3b7.vst'...None inserted
+Improving RC on critical path for file 'alu3b7.vst'...3624 ps
+Improving all RC for file 'alu3b7.vst'...
+Worst RC on file 'alu3b7.vst'...228 ps
+Area on file 'alu3b7.vst'...165000 lamda² (with over-cell routing)
+Details...
+	inv_x2: 19 (8%)
+	a2_x2: 12 (9%)
+	no2_x1: 12 (7%)
+	na2_x1: 9 (5%)
+	o2_x2: 9 (6%)
+	xr2_x1: 6 (8%)
+	noa22_x1: 5 (4%)
+	a3_x2: 5 (4%)
+	ao22_x2: 5 (4%)
+	oa2a22_x2: 5 (6%)
+	nao22_x1: 4 (3%)
+	no3_x1: 4 (3%)
+	mx3_x2: 4 (7%)
+	oa2ao222_x2: 3 (4%)
+	na3_x1: 3 (2%)
+	nao2o22_x1: 3 (3%)
+	nxr2_x1: 3 (4%)
+	o3_x2: 2 (1%)
+	oa22_x2: 2 (1%)
+	o4_x2: 1 (1%)
+	an12_x1: 1 (0%)
+	Total: 117
+Critical path (no warranty)...3624 ps from 'b 0' to 'resultado 2'
+Saving file 'alu3b7.vst'...
+Saving critical path in xsch color file 'alu3b7.xsc'...
+End of loon...
+

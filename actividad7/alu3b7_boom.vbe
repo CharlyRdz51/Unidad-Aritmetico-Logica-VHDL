@@ -1,0 +1,123 @@
+-- VHDL data flow description generated from `alu3b7_boom`
+--		date : Sun Apr 22 14:56:47 2018
+
+
+-- Entity Declaration
+
+ENTITY alu3b7_boom IS
+  PORT (
+  a : in bit_vector(2 DOWNTO 0) ;	-- a
+  b : in bit_vector(2 DOWNTO 0) ;	-- b
+  s : in bit_vector(2 DOWNTO 0) ;	-- s
+  resultado : out bit_vector(5 DOWNTO 0) ;	-- resultado
+  vdd : in BIT;	-- vdd
+  vss : in BIT	-- vss
+  );
+END alu3b7_boom;
+
+
+-- Architecture Declaration
+
+ARCHITECTURE behaviour_data_flow OF alu3b7_boom IS
+  SIGNAL aux0 : BIT;		-- aux0
+  SIGNAL aux1 : BIT;		-- aux1
+  SIGNAL aux2 : BIT;		-- aux2
+  SIGNAL aux3 : BIT;		-- aux3
+  SIGNAL aux4 : BIT;		-- aux4
+  SIGNAL aux5 : BIT;		-- aux5
+  SIGNAL aux6 : BIT;		-- aux6
+  SIGNAL aux7 : BIT;		-- aux7
+  SIGNAL aux9 : BIT;		-- aux9
+  SIGNAL aux10 : BIT;		-- aux10
+  SIGNAL aux12 : BIT;		-- aux12
+  SIGNAL aux13 : BIT;		-- aux13
+  SIGNAL aux14 : BIT;		-- aux14
+  SIGNAL aux17 : BIT;		-- aux17
+  SIGNAL aux18 : BIT;		-- aux18
+  SIGNAL aux21 : BIT;		-- aux21
+  SIGNAL aux22 : BIT;		-- aux22
+  SIGNAL aux23 : BIT;		-- aux23
+  SIGNAL aux30 : BIT;		-- aux30
+  SIGNAL aux31 : BIT;		-- aux31
+  SIGNAL aux32 : BIT;		-- aux32
+  SIGNAL aux33 : BIT;		-- aux33
+  SIGNAL aux34 : BIT;		-- aux34
+  SIGNAL aux35 : BIT;		-- aux35
+  SIGNAL aux36 : BIT;		-- aux36
+  SIGNAL aux37 : BIT;		-- aux37
+  SIGNAL aux38 : BIT;		-- aux38
+
+BEGIN
+  aux38 <= (NOT(s(2)) AND s(1));
+  aux37 <= (a(1) AND NOT(a(2)));
+  aux36 <= (NOT(s(0)) AND aux35);
+  aux35 <= (b(2) AND NOT(a(1)));
+  aux34 <= (NOT(s(0)) AND b(2));
+  aux33 <= (NOT(s(0)) AND NOT(b(2)));
+  aux32 <= (NOT(b(0)) AND a(0));
+  aux31 <= NOT(s(0) OR NOT(a(2)));
+  aux30 <= ((((((aux18 OR NOT(a(1))) AND (aux7 AND b(2))) OR
+ NOT(a(2))) AND aux21) AND NOT(s(2))) AND NOT(s(1)
+));
+  aux23 <= NOT(b(1) XOR aux1);
+  aux22 <= (aux17 AND a(0));
+  aux21 <= (((aux18 OR b(2)) OR NOT(a(1))) AND ((aux7 OR 
+b(2)) AND s(0)));
+  aux18 <= (aux17 AND NOT(a(0)));
+  aux17 <= (b(1) AND b(0));
+  aux14 <= (NOT(b(1)) OR b(0));
+  aux13 <= (NOT(s(0)) OR NOT(b(2)));
+  aux12 <= ((aux5 OR NOT(s(0))) AND aux10);
+  aux10 <= (b(1) OR aux1);
+  aux9 <= ((aux1 OR s(0)) AND aux7);
+  aux7 <= (b(1) OR aux5);
+  aux6 <= (b(1) XOR b(0));
+  aux5 <= (b(0) AND NOT(a(0)));
+  aux4 <= (aux3 AND NOT(s(0)));
+  aux3 <= (b(1) AND a(0));
+  aux2 <= (NOT(b(1)) OR NOT(s(0)));
+  aux1 <= (b(0) AND a(0));
+  aux0 <= (b(0) XOR a(0));
+
+resultado (0) <= ((((((NOT(b(0)) AND s(0)) OR (NOT(a(0)) AND NOT(
+s(0)))) AND s(2)) OR (aux1 AND NOT(s(2)))) AND s(1)) 
+OR (((b(0) AND NOT(s(0)) AND s(2)) OR aux0) AND NOT
+(s(1))));
+
+resultado (1) <= (((((s(0) OR NOT(a(1))) AND aux2 AND s(2)) OR (((
+(NOT(aux2) OR (((aux6 AND a(0)) OR aux5) AND NOT(
+s(0)))) AND a(1)) OR (aux4 AND NOT(a(1)))) AND NOT(
+s(2)))) AND s(1)) OR (((((aux2 AND a(1)) OR (b(1) AND
+ NOT(a(1)))) AND s(2)) OR ((b(1) XOR (b(0) AND (
+a(0) XOR s(0))) XOR a(1)) AND NOT(s(2)))) AND NOT(
+s(1))));
+
+resultado (2) <= ((((NOT(aux31) AND aux13 AND s(2)) OR (((((((((
+NOT(b(1)) AND aux32) OR (aux6 AND NOT(a(0))) OR s(0)
+) AND b(2)) OR ((aux3 OR aux6) AND aux33)) AND 
+a(1)) OR ((((aux0 OR s(0)) AND b(2)) OR (b(0) AND 
+aux33)) AND NOT(a(1)))) AND a(2)) OR (((((((aux14 AND 
+a(0)) OR (b(1) AND NOT(a(0)))) AND aux34) OR (b(1) 
+AND NOT(aux1) AND aux33)) AND a(1)) OR (a(0) AND 
+aux36)) AND NOT(a(2)))) AND NOT(s(2)))) AND s(1)) OR (
+((((aux13 AND a(2)) OR (b(2) AND NOT(a(2)))) AND 
+s(2)) OR (((((aux12 XOR b(2)) AND a(1)) OR ((aux9 XOR
+ b(2)) AND NOT(a(1)))) XOR a(2)) AND NOT(s(2)))) 
+AND NOT(s(1))));
+
+resultado (3) <= (((((((((aux32 OR (aux14 AND NOT(a(0)))) AND 
+aux34) OR (NOT(aux14) AND aux33)) AND a(1)) OR (((NOT(
+aux23) AND aux34) OR (b(1) AND aux33)) AND NOT(a(1))))
+ AND a(2)) OR (((NOT(aux3) AND aux34) OR (aux22 
+AND aux33)) AND aux37)) AND aux38) OR (((aux12 AND 
+b(2) AND a(1)) OR (aux9 AND aux35) OR ((aux22 OR b(2)
+ OR a(1)) AND (aux10 OR b(2)) AND aux31) OR (aux21
+ AND NOT(a(2)))) AND NOT(s(2)) AND NOT(s(1))));
+
+resultado (4) <= ((((((((aux23 AND aux34) OR (aux17 AND aux33)) 
+AND a(1)) OR (NOT(aux22) AND aux36)) AND a(2)) OR (
+aux4 AND b(2) AND aux37)) AND aux38) OR aux30);
+
+resultado (5) <= (((aux22 OR a(1)) AND aux10 AND NOT(s(0)) AND 
+b(2) AND a(2) AND aux38) OR aux30);
+END;

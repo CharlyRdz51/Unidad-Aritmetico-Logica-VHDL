@@ -1,0 +1,12 @@
+(rds to CIF driver cvs version $Revision: 1.1.1.1 $
+technology /etc/cmos.rds
+Sun Apr 22 15:37:11 2018
+alu3b7_nero_drc
+user);
+
+DS1 50 2;
+9 alu3b7_nero_drc;
+DF;
+
+C1;
+E 

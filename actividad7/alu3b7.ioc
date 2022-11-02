@@ -1,0 +1,24 @@
+         
+	TOP(
+	    (IOPIN a(0).0);
+	    (IOPIN a(1).0);
+	    (IOPIN a(2).0);
+	    (IOPIN b(0).0);
+	    (IOPIN b(1).0);
+	    (IOPIN b(2).0); 
+	    (IOPIN s(0).0);
+	    (IOPIN s(1).0);   
+            )
+	LEFT(
+	     )
+	RIGHT(
+	    )
+	BOTTOM(
+	    (IOPIN resultado(0).0);
+	    (IOPIN resultado(1).0);
+	    (IOPIN resultado(2).0);
+	    (IOPIN resultado(3).0);
+	    (IOPIN resultado(4).0);
+	    (IOPIN resultado(5).0); 
+	    )
+
